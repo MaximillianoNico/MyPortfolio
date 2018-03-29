@@ -45,19 +45,14 @@ class Portfolio extends Component{
             .catch(
                 (error)=>{
                     console.log(error);
-            });
-            // API RandomUser.Me
-            axios.get('https://randomuser.me/api/')
-            .then(function(responseAPI){
-                for(let i =0; i<2;i++){
-                    this.setState({
-                        peopleView:responseAPI.name.first[i]+" "+responseAPI.name.last[i],
-                        imageView:responseAPI.picture.thumbnail[i]
-                    })
-                }
-            }).catch(function(error){
-                console.log(error);
             })
+
+    axios({
+        url:'https://randomuser.me/api/',
+        method:'GET'})
+        .then((responseAPI)=>{
+            console.log(responseAPI.result.gender);
+        })
     };
     static defaultProps = {
         center: { lat: 40.7446790, lng: -73.9485420 },
