@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import GoogleMapReact from 'google-map-react';
 import './../App.css';
+import myFoto from './../asset/Image_.jpg';
+import Load from './../asset/ajax-loader.gif';
 // import firebase from 'firebase';
 import './../style/Portfolio.css';
 // import config from './../vendor/firebaseConfig';
@@ -16,7 +18,9 @@ class Portfolio extends Component{
           isLoaded: false,
           content:[],
           education:[],
-          certification:[]
+          certification:[],
+          peopleView:[],
+          imageView:[]
         }
         // firebase.initializeApp(config);
     }
@@ -37,6 +41,22 @@ class Portfolio extends Component{
                         education: ambilData.data.education,
                         certification: ambilData.data.Certification
                     })
+            })
+            .catch(
+                (error)=>{
+                    console.log(error);
+            });
+            // API RandomUser.Me
+            axios.get('https://randomuser.me/api/')
+            .then(function(responseAPI){
+                for(let i =0; i<2;i++){
+                    this.setState({
+                        peopleView:responseAPI.name.first[i]+" "+responseAPI.name.last[i],
+                        imageView:responseAPI.picture.thumbnail[i]
+                    })
+                }
+            }).catch(function(error){
+                console.log(error);
             })
     };
     static defaultProps = {
@@ -68,6 +88,7 @@ class Portfolio extends Component{
                     </div>
         })
 
+
         // looping array content
         const datalist = content.map((item,index)=>{
             // setting active carousel with if else
@@ -93,8 +114,8 @@ class Portfolio extends Component{
 
 
         if(!isLoaded){
-            return <div className="container" style={{textAlign:'center',marginTop:'10%'}}>
-                        <h2>Loading.....</h2>
+            return <div className="container" style={{textAlign:'center',marginTop:'20%'}}>
+                        <img src={Load} style={{width:70, height:70}}/>
                     </div>
         }
         else{
@@ -106,7 +127,7 @@ class Portfolio extends Component{
                 <div className="row">
                     <div className="col-lg-8" style={{textAlign:'center'}}>
                         <div className="jumbotron shadow-effect">
-                            <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAehAAAAJGFmYjM1OTQ4LTBlYTctNDllNy1iMjY4LWZjZjYwZmU0Mzc1Zg.jpg" className="img-profile"/>
+                            <img src={myFoto} className="img-profile"/>
                             <h2>{this.state.name}</h2>
                             <h5><b>{this.state.job}</b></h5>
                             <h6>{this.state.location}</h6>
