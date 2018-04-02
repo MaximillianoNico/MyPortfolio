@@ -110,8 +110,8 @@ class Portfolio extends Component{
             console.log("Success Access Firebase Database");
         }
         return(
-            <div style={{padding:100}}>
-                <div className="container" style={{marginTop:'2%'}}>
+            <div>
+                <div className="container" style={{marginTop:'2%',padding:75}}>
                 <div className="row">
                     <div className="col-lg-8" style={{textAlign:'center'}}>
                         <div className="jumbotron shadow-effect">
@@ -183,7 +183,7 @@ class Portfolio extends Component{
                     </div>
                 </div>
             </div>
-            <div className="" style={{marginTop:'7em'}}>
+            <div className="" style={{marginTop:'7em',padding:75}}>
                 <h1 className="font-fira-sans" style={{textAlign:'center'}}>Experience</h1>
                 <div className="container jumbotron" style={{marginTop:'30px'}}>
                 <div id="carouselExampleControls" style={{}} class="carousel slide" data-ride="carousel">
