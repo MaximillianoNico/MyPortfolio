@@ -110,7 +110,7 @@ class Portfolio extends Component{
             console.log("Success Access Firebase Database");
         }
         return(
-            <div style={{padding:75}}>
+            <div style={{padding:100}}>
                 <div className="container" style={{marginTop:'2%'}}>
                 <div className="row">
                     <div className="col-lg-8" style={{textAlign:'center'}}>
