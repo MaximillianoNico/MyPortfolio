@@ -46,13 +46,6 @@ class Portfolio extends Component{
                 (error)=>{
                     console.log(error);
             })
-
-    // axios({
-    //     url:'https://randomuser.me/api/',
-    //     method:'GET'})
-    //     .then((responseAPI)=>{
-    //         console.log(responseAPI.result.gender);
-    //     })
     };
     static defaultProps = {
         center: { lat: 40.7446790, lng: -73.9485420 },
