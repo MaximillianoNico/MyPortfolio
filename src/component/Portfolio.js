@@ -47,12 +47,12 @@ class Portfolio extends Component{
                     console.log(error);
             })
 
-    axios({
-        url:'https://randomuser.me/api/',
-        method:'GET'})
-        .then((responseAPI)=>{
-            console.log(responseAPI.result.gender);
-        })
+    // axios({
+    //     url:'https://randomuser.me/api/',
+    //     method:'GET'})
+    //     .then((responseAPI)=>{
+    //         console.log(responseAPI.result.gender);
+    //     })
     };
     static defaultProps = {
         center: { lat: 40.7446790, lng: -73.9485420 },
@@ -118,7 +118,7 @@ class Portfolio extends Component{
         }
         return(
             <div>
-                <div className="container" style={{marginTop:'2%',padding:25}}>
+                <div className="container" style={{marginTop:'2%',padding:50}}>
                 <div className="row">
                     <div className="col-lg-8" style={{textAlign:'center'}}>
                         <div className="jumbotron shadow-effect">
