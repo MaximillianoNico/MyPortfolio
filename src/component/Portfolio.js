@@ -183,7 +183,7 @@ class Portfolio extends Component{
                     </div>
                 </div>
             </div>
-            <div className="" style={{marginTop:'7em',padding:75}}>
+            <div className="" style={{marginTop:'7em'}}>
                 <h1 className="font-fira-sans" style={{textAlign:'center'}}>Experience</h1>
                 <div className="container jumbotron" style={{marginTop:'30px'}}>
                 <div id="carouselExampleControls" style={{}} class="carousel slide" data-ride="carousel">
