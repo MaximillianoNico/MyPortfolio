@@ -111,7 +111,7 @@ class Portfolio extends Component{
         }
         return(
             <div>
-                <div className="container" style={{marginTop:'2%',padding:75}}>
+                <div className="container" style={{marginTop:'5%'}}>
                 <div className="row">
                     <div className="col-lg-8" style={{textAlign:'center'}}>
                         <div className="jumbotron shadow-effect">
