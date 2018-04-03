@@ -8,10 +8,10 @@ import {createStore, ApplyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import thunk from 'redux-thunk';
 
-const store = createStore(/*reducer ApplyMiddleware(thunk)*/);
+// const store = createStore();
 
 ReactDOM.render(
-    <Provider store={store}>
+    <Provider>
         <BrowserRouter>
             <App />
         </BrowserRouter>
