@@ -113,9 +113,53 @@ class Portfolio extends Component{
             <div>
                 <div className="container" style={{marginTop:'5%'}}>
                 <div className="row">
-                    <div className="col-lg-8" style={{textAlign:'center'}}>
-                        <div className="jumbotron shadow-effect">
-                            <img src={myFoto} className="img-profile"/>
+                    <div className="col-lg-8 setMargin-container" style={{textAlign:'center'}}>
+                        <div className="shadow-effect">
+                            <div className="row">
+                                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4" style={{backgroundColor:'#3be2f0'}}>
+                                    <img src={myFoto} className="img-profile"/>
+                                </div>
+                                <div className="col-lg-8 col-md-8 col-sm-8 col-xs-8 padding-7-persen">
+                                    <center style={{textAlign:'left'}}>
+                                        <div className="col-lg-11 col-md-11 col-sm-11 col-xs-11 setMargin">
+                                            <h3>{this.state.name}</h3>
+                                            <h5><b>{this.state.job}</b></h5>
+                                            <h6>{this.state.location}</h6>
+                                            <hr/>
+                                            <div className="font-sans-pro" style={{textAlign:'none'}}>
+                                                <p style={{fontSize:14}}>{this.state.summary}</p>
+                                            </div>
+                                            <div style={{paddingTop:'10px'}}>
+                                                <a href="" className="link-icons">
+                                                    <i class="material-icons" 
+                                                        style={{
+                                                            paddingLeft:'5px',
+                                                            paddingRight:'5px'
+                                                            }}>&#xE0B0;
+                                                    </i>
+                                                </a>
+                                                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=maximillianonico8@email.com" className="link-icons">
+                                                    <i class="material-icons" 
+                                                        style={{
+                                                            paddingLeft:'5px',
+                                                            paddingRight:'5px'
+                                                            }}>&#xE0BE;
+                                                    </i>
+                                                </a>
+                                                <a href="https://www.google.co.id/maps/place/Jl.+Damarsari+II,+Jati+Padang,+Ps.+Minggu,+Kota+Jakarta+Selatan,+Daerah+Khusus+Ibukota+Jakarta+12540/@-6.2853731,106.8299063,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69f210e4c4fb01:0x990b7b9fbfe2fdcb!8m2!3d-6.2853731!4d106.832095?hl=id" className="link-icons">
+                                                    <i class="material-icons" 
+                                                        style={{
+                                                            paddingLeft:'5px',
+                                                            paddingRight:'5px'}}>&#xE0C8;
+                                                    </i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </center>
+                                </div>
+                            </div>
+
+                            {/* <img src={myFoto} className="img-profile"/>
                             <h2>{this.state.name}</h2>
                             <h5><b>{this.state.job}</b></h5>
                             <h6>{this.state.location}</h6>
@@ -147,7 +191,7 @@ class Portfolio extends Component{
                             <hr/>
                                 <div className="font-sans-pro" style={{textAlign:'center'}}>
                                     <h5>{this.state.summary}</h5>
-                                </div>
+                                </div> */}
                         </div>
                     </div>
                     <div className="col-lg-4">
