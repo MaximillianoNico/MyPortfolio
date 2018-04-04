@@ -55,9 +55,23 @@
         width:200px;
         height:200px;
         /* border-radius:50%; */
+        position:static;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .setMargin-container{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:575.98px){
+    .img-profile{
+        width:200px;
+        height:200px;
+        /* border-radius:50%; */
         /* position: absolute; */
-        margin-top: 50%;
-        margin-left: -45px;
+        margin-top: 20%;
+        /* margin-left: -45px; */
     }
     .setMargin-container{
         margin-bottom: 40px;
