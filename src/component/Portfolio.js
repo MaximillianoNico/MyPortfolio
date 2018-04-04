@@ -116,8 +116,10 @@ class Portfolio extends Component{
                     <div className="col-lg-8 setMargin-container" style={{textAlign:'center'}}>
                         <div className="shadow-effect">
                             <div className="row">
-                                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4" style={{backgroundColor:'#3be2f0'}}>
-                                    <img src={myFoto} className="img-profile"/>
+                                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <div style={{backgroundColor:'#3be2f0'}}>
+                                        <img src={myFoto} className="img-profile"/>
+                                    </div>
                                 </div>
                                 <div className="col-lg-8 col-md-8 col-sm-8 col-xs-8 padding-7-persen">
                                     <center style={{textAlign:'left'}}>
