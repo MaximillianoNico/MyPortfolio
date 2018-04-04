@@ -195,11 +195,11 @@ class Portfolio extends Component{
                         </div>
                     </div>
                     <div className="col-lg-4">
-                        <div className="jumbotron shadow-effect">
+                        <div className="shadow-effect padding-75 bg-grey">
                             <div>
                                 <h5><b>People Also Viewed</b></h5>
                             </div>
-                            <div className="container-fluid" style={{marginTop:'20px'}}>
+                            <div className="container-fluid">
                                 <div className="row" style={{marginTop:'10px'}}>
                                     <div className="col-lg-3">
                                         <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAIAAgDGAAAAAQAAAAAAAAviAAAAJGY2MmE3NDkzLWE5MGItNDViMS1iOTUxLTc5YTI0NDgyZDg3Yw.jpg" className="img"/>

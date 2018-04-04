@@ -73,9 +73,12 @@
 .font-fira-sans{
     font-family: 'Fira Sans', sans-serif;
 }
-.padding-30p{
+.padding-75{
     padding: 30px;
 }
 .padding-7-persen{
     padding: 7%;
+}
+.bg-grey{
+    background-color: #f5f5f5;
 }
