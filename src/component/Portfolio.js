@@ -117,7 +117,7 @@ class Portfolio extends Component{
                         <div className="shadow-effect">
                             <div className="row">
                                 <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                    <div style={{backgroundColor:'#3be2f0'}}>
+                                    <div className="bgCyan">
                                         <img src={myFoto} className="img-profile"/>
                                     </div>
                                 </div>

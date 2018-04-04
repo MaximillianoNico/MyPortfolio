@@ -63,18 +63,30 @@
         margin-bottom: 40px;
     }
 }
+.bgCyan{
+    background-color: #3be2f0;
+}
 
 @media (max-width:575.98px){
     .img-profile{
         width:200px;
         height:200px;
-        /* border-radius:50%; */
+        border-radius:50%;
         /* position: absolute; */
         margin-top: 10%;
-        margin-left: -45px;
+        margin-left: 0px;
     }
     .setMargin-container{
         margin-bottom: 40px;
+    }
+    .bgCyan{
+        background-color:white;
+    }
+    .setMargin{
+        margin-top:0px;
+        margin-bottom:70px;
+        margin-left:0px;
+        text-align: center;
     }
 }
 
