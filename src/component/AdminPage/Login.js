@@ -48,7 +48,7 @@ class Login extends Component{
     }
     render(){
         return(
-            <center className="container" style={{textAlign:'center', marginTop:200}}>
+            <center className="container" style={{textAlign:'center', marginTop:150}}>
                 <div className="col-lg-5 jumbotron" style={{alignContent:'center',justifyContent:'center'}}>
                     <div className="col-lg-10">
                         <h1>Administrator</h1>
