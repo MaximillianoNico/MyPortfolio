@@ -4,9 +4,7 @@ import GoogleMapReact from 'google-map-react';
 import './../App.css';
 import myFoto from './../asset/Image_.jpg';
 import Load from './../asset/ajax-loader.gif';
-// import firebase from 'firebase';
 import './../style/Portfolio.css';
-// import config from './../vendor/firebaseConfig';
 class Portfolio extends Component{
     constructor(){
         super();

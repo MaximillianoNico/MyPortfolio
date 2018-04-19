@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 class Navigation extends Component{
     constructor(props){
         super(props);
@@ -19,7 +19,7 @@ class Navigation extends Component{
                         <ul className="navbar-nav mr-auto">
                             {MainMenu.map((item,key)=>{
                                 return  (<li className="nav-item">
-                                            <Link className="nav-link" to={item.path}>{item.name}</Link>
+                                            <a className="nav-link" href={item.path}>{item.name}</a>
                                         </li>)
                             })}
                         </ul>
@@ -31,4 +31,4 @@ class Navigation extends Component{
         )
     }
 }
-export default Navigation;
+export default withRouter(Navigation);

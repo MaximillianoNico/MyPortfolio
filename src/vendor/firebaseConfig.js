@@ -6,5 +6,4 @@ var config = {
     storageBucket: "maximilliano-15166.appspot.com",
     messagingSenderId: "423745909110"
 };
-
 export default config;
