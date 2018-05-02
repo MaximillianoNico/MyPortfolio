@@ -13,7 +13,9 @@ class Logout extends Component{
 
     render(){
         return(
-            <h1>"Logging Out"</h1>
+            <center style={{marginTop:50}}>
+                <h1>"Logging Out ......"</h1>
+            </center>
         )
     }
 }

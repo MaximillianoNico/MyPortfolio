@@ -22,7 +22,6 @@ class Login extends Component{
         let email = e.target.inputEmail.value;
         let password = e.target.inputPassword.value;
 
-        alert(password);
         this.props.dispatch(
             actions.Authentication(email, password)
         )
@@ -30,7 +29,7 @@ class Login extends Component{
     }
     render(){
         return(
-            <center className="container" style={{textAlign:'center', marginTop:150}}>
+            <center className="container" style={{textAlign:'center', marginTop:150,marginLeft:'30%'}}>
                 <div className="col-lg-5 jumbotron" style={{alignContent:'center',justifyContent:'center'}}>
                     <div className="col-lg-10">
                         <form 

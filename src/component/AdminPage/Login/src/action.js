@@ -32,9 +32,4 @@ export default{
             })
         }
     }
-    // getSession(){
-    //     return (dispatch) =>{
-    //         return firebase.
-    //     }
-    // }
 }
